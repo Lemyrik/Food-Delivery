@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,43 +10,40 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="header__container _container">
-                <nav class="header__nav">
-                    <a href="" class="menu__link">УНИВЕРСИТЕТ</a>
-                    <a href="" class="menu__link">БИБЛИОТЕКА</a>
-                    <a href="" class="menu__link">ОБРАЗОВАНИЕ</a>
-                    <a href="" class="menu__link">НАУКА</a>
-                    <a href="" class="menu__link">МОЛОЖЕЖНАЯ ПОЛИТИКА</a>
-                    <a href="" class="menu__link">МЕЖДУНАРОДНОЕ СОТРУДНИЧЕСТВО</a>                        </li>
-                    <a href="" class="menu__link">КОНТАКТЫ</a>
+        <!--<header class="header">-->
+            <div class="header__container">
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__nav _container">
+                    <div class="header__band-nav">
+                        <a href="#about">О нас</a>
+                        <a href="#menu">Столовые</a>
+                        <a href="#delivery">Доставка</a>
+                        <a href="#answer">Вопрос-ответ</a>
+                    </div>
+                    <div class="header__band-mess">
+                        <img src="image/insta.png" alt="Insta">
+                        <img src="image/OK.png" alt="OK">
+                        <img src="image/vk.png" alt="VK">
+                    </div>
+                    <div class="header__band-info-block">
+                    <div class="header__band-info">
+                        <p>Принимаем заказы по тел.: <span> +375 (29) 350 78 18</span></p>
+                        <p>Время работы: с 09.00 до 16.00 Пн. - Пт.</p>
+                    </div>
+                    <hr class="header__band-hr" noshade>
+                    <img class="header__band-img"src="image/signIn.png" alt="SignIn">
+                </div>
                 </nav>
             </div>
-        </header>
-        <div class="header__band _container">
-            <div class="header__band-nav">
-                <a href="#about">О нас</a>
-                <a href="#menu">Столовые</a>
-                <a href="#delivery">Доставка</a>
-                <a href="#answer">Вопрос-ответ</a>
-            </div>
-            <div class="header__band-mess">
-                <img src="image/insta.png" alt="Insta">
-                <img src="image/OK.png" alt="OK">
-                <img src="image/vk.png" alt="VK">
-            </div>
-            <div class="header__band-info">
-                <p>Принимаем заказы по тел.: +375 (29) 350 78 18</p>
-                <p>Время работы: с 09.00 до 16.00 Пн. - Пт.</p>
-            </div>
-            <hr class="header__band-hr" noshade>
-            <img class="header__band-img"src="image/signIn.png" alt="SignIn">
-        </div>
+       <!-- </header> -->
         <div class="order _container">
-            <img class="order__img" src="image/order.png" alt="Orders">
+            <img class="order__img global__img" src="image/order.png" alt="Orders">
         </div>
         <main class="page">
             <div class="main__general _container">
+                <h1 class="main__general_head-mob">Доставка домашней еды</h1>
                 <img class="general_img" src="image/head.png" alt="foto">
                 <div class="main__general-info">
                     <h1 class="main__general-info_head">Доставка домашней еды</h1>
@@ -56,9 +53,8 @@
                         Следите за нашими обновлениями на сайте и в социальных<br> сетях.
                         Возможно изменение цен.<br></p>
                     <div class="order-phone">
-                        <h4>Оформите заказ по телефону:</h4>
-                        <div class="number">+375 (29) 350 78 18</div>
-                    </div>    
+                        <h4>Оформите заказ по телефону:<span> +375 (29) 350 78 18</span>
+                        </div>    
                     <div class="general__facts">
                             <div class="general__facts-1 facts">
                                 <div class="facts__lable">
@@ -83,17 +79,17 @@
                                 <p>Доставка: до <span class="colortext">17:00</span></p>
                                 <p>Самовывоз: ул.<br> ИПД, 46 (кафе<br> «Акватория»)</p>
                             </div>
-                        </div>
+                    </div>
                 </div>
             </div>
             <div class="main_menu _container">
                 <p><a name="menu"></a></p>
-                <img class="menu__head" src="image/menu-el.png" alt="">
+                <img class="menu__head global__img" src="image/menu-el.png" alt="">
                 <div class="main_menu_btn">
-                    <button class="btn menu-btn menu-btn-1" >Столовая №1 (ул.Кирова,24)</button>
-                    <button class="btn menu-btn menu-btn-2">Столовая №2 (ул.Куликова,27)</button>
-                    <button class="btn menu-btn menu-btn-3">Столовая №3 (ул.Пушкина,4)</button>
-                </div>
+                <div><button class="btn menu-btn menu-btn-1" >Столовая №1<span> (ул.Кирова,24)</span></button>
+                </div><div><button class="btn menu-btn menu-btn-2">Столовая №2<span> (ул.Куликова,27)</span></button>
+                </div><div><button class="btn menu-btn menu-btn-3">Столовая №3<span> (ул.Пушкина,4)</span></button>
+                </div></div>
                 <table class="menu__table">
                     <tr>
                         <td class="menu__table-td">Комплексные обеды</td>
@@ -108,58 +104,71 @@
                         <td class="menu__table-td">Напитки</td>
                     </tr>
                 </table>
-                <div class="menu_cards">
+                <!--<div class="menu_select_block"><select name="menu_select" id="">
+                    <option value="">Супы</option>
+                    <option value="">Комплексные обеды</option>
+                    <option value="">Гарниры</option>
+                    <option value="">Горячие блюда</option>
+                    <option value="">Салаты</option>
+                    <option value="">Фаст-фуд</option>
+                    <option value="">Десерты</option>
+                    <option value="">Напитки</option>
+                </select></div>-->
+                <div class="menu_cards _container">
                     <div class="menu_card menu_card-1">
-                        <img src="image/card-1.png" alt="">
+                        <img class="menu_card_img" src="image/card-1.png" alt="">
                         <div class="menu_card_info">
-                        <p>Суп перловый с грибами и<br> колб.вар.</p>
-                        <p>(250/10/10 г)<span>1.51 руб.</span></p>
-                        <button class="btn menu_card_btn menu_card_btn-1">В корзину</button>
-                    </div></div>
+                            <p>Суп перловый с грибами и<br> колб.вар.</p>
+                            <p>(250/10/10 г)<span>1.51 руб.</span></p>
+                            <button class="btn menu_card_btn menu_card_btn-1">В корзину</button>
+                        </div>
+                    </div>
                     <div class="menu_card menu_card-2">
-                        <img src="image/card-2.png" alt="">
+                        <img class="menu_card_img" src="image/card-2.png" alt="">
                         <div class="menu_card_info">
-                        <p>Борщ со сметаной и коб.вар.</p>
-                        <p>(250/10/10 г)<span>1.46 руб.</span></p>
-                        <button class="btn menu_card_btn">В корзину</button>
-                    </div></div>
+                            <p>Борщ со сметаной и коб.вар.</p>
+                            <p>(250/10/10 г)<span>1.46 руб.</span></p>
+                            <button class="btn menu_card_btn">В корзину</button>
+                        </div>
+                    </div>
                     <div class="menu_card menu_card-3">
-                        <img src="image/card-3.png" alt="">
+                        <img class="menu_card_img" src="image/card-3.png" alt="">
                         <div class="menu_card_info">
-                        <p>Бульон из цыплят с яйцом</p>
-                        <p>(250/10/10 г)<span>1.40 руб.</span></p>
-                        <button class="btn menu_card_btn">В корзину</button>
+                            <p>Бульон из цыплят с яйцом</p>
+                            <p>(250/10/10 г)<span>1.40 руб.</span></p>
+                            <button class="btn menu_card_btn">В корзину</button>
+                        </div>
                     </div>
                 </div>
-            </div></div>
+            </div>
             <div class="about _container">
                 <p><a name="about"></a></p>
-                <img class="about_img_head" src="image/about_head.png" alt="">
+                <img class="about_img_head global__img" src="image/about_head.png" alt="">
                 <div class="about_block">
                     <div>
                         <h2><strong>Здоровье студента – важнейшая основа его будущего!</strong></h2>
                         <p>
-                            Организация рационального питания учащихся во время<br>
-                            обучения в вузе является одним из наиболее  важных факторов<br>
-                            поддержания их здоровья и эффективности обучения.<br>
-                            Коллектив столовых обеспечивает студентов, сотрудников и<br>
+                            Организация рационального питания учащихся во время
+                            обучения в вузе является одним из наиболее  важных факторов
+                            поддержания их здоровья и эффективности обучения.
+                            Коллектив столовых обеспечивает студентов, сотрудников и
                             гостей университета качественным и доступным питанием.
                         <p>
-                            В состав центра общественного питания входят:<strong> 3 столовых,<br>
+                            В состав центра общественного питания входят:<strong> 3 столовых,
                             кафе «Акватория»,  кофейня «Университетский клуб», 3 буфета. </strong>
                         </p>
                         <p>
-                            Столовые и кафе  работают по меню свободного выбора. В меню<br>
-                            предусмотрен широкий ассортиментный перечень продукции<br>
+                            Столовые и кафе  работают по меню свободного выбора. В меню
+                            предусмотрен широкий ассортиментный перечень продукции
                             собственного производства.
                         </p>
                         <p>
-                            В центре общественного питания имеется кондитерский цех,<br>
-                            модернизированный новым технологическим оборудованием.<br>
-                            Ассортимент нашей университетской выпечки знает каждый,<br>
-                            это – различные булочки, сочники, пироги, печенье и многое<br>
-                            другое. А каким успехом пользуются наши университетские<br>
-                            ватрушка с творогом и слойка с курагой. Эта наша сладкая<br>
+                            В центре общественного питания имеется кондитерский цех,
+                            модернизированный новым технологическим оборудованием.
+                            Ассортимент нашей университетской выпечки знает каждый,
+                            это – различные булочки, сочники, пироги, печенье и многое
+                            другое. А каким успехом пользуются наши университетские
+                            ватрушка с творогом и слойка с курагой. Эта наша сладкая
                             визитная карточка!</p>
                         </p>
                     </div>
@@ -168,19 +177,19 @@
             </div>
             <div class="delivery _container">
                 <p><a name="delivery"></a></p>
-                <img class="deliv_img_head" src="image/deliv_head.png" alt="">
+                <img class="deliv_img_head global__img" src="image/deliv_head.png" alt="">
                 <table class="deliv_table">
                     <tr>
                         <td>
                             <div class="table_step-head">
                                 <img src="image/deliv_step-1.png" alt="">
-                                <p>-----------------------------------------></p>
+                                <p>----------------------------------></p>
                             </div>
                         </td>
                         <td>
                             <div class="table_step-head">
                             <img src="image/deliv_step-2.png" alt="">
-                            <p>-----------------------------------------></p>
+                            <p>-----------------------------></p>
 
                             </div>
                         </td>
@@ -202,7 +211,7 @@
             </div>
                 <div class="q-a _container">
                     <p><a name="answer"></a></p>
-                    <img class="q-a_header_img" src="image/q-a.png" alt="">
+                    <img class="q-a_header_img global__img" src="image/q-a.png" alt="">
                 <div class="q-a_block">  
                     <div class="q-a_block-1">
                         <h4>Здесь вы можете задать вопросы руководителям мест<br>
@@ -220,8 +229,9 @@
                             Плохо готовят – «Администрация столовых»
                         </p>
                         <div class="img_wrap">
-                        <img class="q-a_block-1_img" src="image/g-a.png" alt="">
-                    </div></div>
+                            <img class="q-a_block-1_img" src="image/g-a.png" alt="">
+                        </div>
+                    </div>
                     <div class="q-a_block-2">
                         <label class="q-a_lable" for="">Получатель</label>
                         <select class="q-a_input q-a_input-select" name="" id="" >
@@ -229,8 +239,8 @@
                             <option value="">Служба доставки</option>
                             <option value="">Администрация столовых</option>
                         </select>
-                        <label class="q-a_lable"  for="">Имя, Фамилия</label>
-                        <input placeholder="Введите Имя и Фамилию" class="q-a_input" type="text"/>
+                        <label class="q-a_lable"  for="">Имя</label>
+                        <input placeholder="Введите Имя" class="q-a_input" type="text"/>
                         <label class="q-a_lable" for="">Email</label>
                         <input placeholder="Введите Email" class="q-a_input" type="email"/>
                         <label class="q-a_lable" for="">Вопрос</label>
@@ -242,24 +252,24 @@
         </main>
         <footer class="footer">
          <div class="footer__container _container">
-            <div class="footer__block-1">
+            <div class="footer__block-1 fooret__block">
                 <h1>Доставка домашней еды</h1>
                 <p>© 2012-2022 Полесский государственный<br> университет</p>
                 <p>polessu.by</p>
             </div>
-            <nav class="footer__nav">
+            <nav class="footer__nav fooret__block">
                 <a href="#about">О нас</a>
                 <a href="#menu">Столовые</a>
                 <a href="#delivery">Доставка</a>
                 <a href="#answer">Вопрос-ответ</a>
             </nav>
-            <div class="footer__block-2">
+            <div class="footer__block-2 fooret__block">
                 <p>Принимаем заказы по тел.: +375 (29) 350 78 18</p>
                 <p>Время работы: с 09.00 до 16.00 Пн. - Пт.</p>
                 <div class="messengers">
-                    <img class="footer__img" src="image/insta_f.png" alt="Insta">
-                    <img class="footer__img" src="image/ok_f.png" alt="OK">
-                    <img class="footer__img" src="image/vk_f.png" alt="VK">
+                    <img class="footer__img" src="image/insta.png" alt="Insta">
+                    <img class="footer__img" src="image/ok.png" alt="OK">
+                    <img class="footer__img" src="image/vk.png" alt="VK">
                 </div>
             </div>
         </div>
