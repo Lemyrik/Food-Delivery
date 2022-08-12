@@ -12,6 +12,7 @@
     <div class="wrapper">
         <!--<header class="header">-->
             <div class="header__container">
+                <div class="header_container_container">
                 <div class="header__burger">
                     <span></span>
                 </div>
@@ -36,6 +37,7 @@
                     <img class="header__band-img"src="image/signIn.png" alt="SignIn">
                 </div>
                 </nav>
+            </div>
             </div>
        <!-- </header> -->
         <div class="order _container">
@@ -84,7 +86,7 @@
             </div>
             <div class="main_menu _container">
                 <p><a name="menu"></a></p>
-                <img class="menu__head global__img" src="image/menu-el.png" alt="">
+                <img class="menu__head global__img" src="image/menu.png" alt="">
                 <div class="main_menu_btn">
                 <div><button class="btn menu-btn menu-btn-1" >Столовая №1<span> (ул.Кирова,24)</span></button>
                 </div><div><button class="btn menu-btn menu-btn-2">Столовая №2<span> (ул.Куликова,27)</span></button>
@@ -104,16 +106,16 @@
                         <td class="menu__table-td">Напитки</td>
                     </tr>
                 </table>
-                <!--<div class="menu_select_block"><select name="menu_select" id="">
-                    <option value="">Супы</option>
-                    <option value="">Комплексные обеды</option>
-                    <option value="">Гарниры</option>
-                    <option value="">Горячие блюда</option>
-                    <option value="">Салаты</option>
-                    <option value="">Фаст-фуд</option>
-                    <option value="">Десерты</option>
-                    <option value="">Напитки</option>
-                </select></div>-->
+                <div class="menu_select_block"><select class="menu_select" >
+                    <option class="menu_select_option" value="">Супы</option>
+                    <option class="menu_select_option" value="">Комплексные обеды</option>
+                    <option class="menu_select_option" value="">Гарниры</option>
+                    <option class="menu_select_option" value="">Горячие блюда</option>
+                    <option class="menu_select_option" value="">Салаты</option>
+                    <option class="menu_select_option" value="">Фаст-фуд</option>
+                    <option class="menu_select_option" value="">Десерты</option>
+                    <option class="menu_select_option" value="">Напитки</option>
+                </select></div>
                 <div class="menu_cards _container">
                     <div class="menu_card menu_card-1">
                         <img class="menu_card_img" src="image/card-1.png" alt="">
@@ -178,36 +180,39 @@
             <div class="delivery _container">
                 <p><a name="delivery"></a></p>
                 <img class="deliv_img_head global__img" src="image/deliv_head.png" alt="">
-                <table class="deliv_table">
-                    <tr>
-                        <td>
-                            <div class="table_step-head">
-                                <img src="image/deliv_step-1.png" alt="">
-                                <p>----------------------------------></p>
+                <div class="deliv__steps">
+                    <div class="deliv__step">
+                        <div class="deliv_step-head">
+                            <img src="image/deliv_step-1.png" alt="">
+                            <div class="deliv_step_pointer">
+                                <hr class="deliv-hr">
+                                <span>></span>
                             </div>
-                        </td>
-                        <td>
-                            <div class="table_step-head">
+                        </div>
+                        <h2>Заявка</h2>
+                        <h3>Оставьте заявку или наберите по номеру +375 (29) 350 78 18</h3>
+                        <div class="deliv_step_pointer-mob"><hr class="deliv-hr">
+                            <span>></span>
+                        </div>
+                    </div>
+                    <div class="deliv__step">
+                        <div class="deliv_step-head">
                             <img src="image/deliv_step-2.png" alt="">
-                            <p>-----------------------------></p>
-
-                            </div>
-                        </td>
-                        <td><img src="image/deliv_step-3.png" alt=""></td>
-                    </tr>
-                    <tr>
-                        <th>Заявка</th>
-                        <th>Оформление заказа</th>
-                        <th>Доставка</th>
-                    </tr>
-                    <tr>
-                        <td>Оставьте заявку или наберите по номеру<br>
-                              +375 (29) 350 78 18</td>
-                        <td>С вами свяжется консультант и уточнит<br> детали</td>
-                        <td>К вам приедет курьер и доставит ваш<br> заказ к указанному времени</td>
-                    </tr>
-                
-                </table>
+                            <div class="deliv_step_pointer"><hr class="deliv-hr">
+                                <span>></span></div>     
+                        </div>
+                        <h2>Оформление заказа</h2>
+                        <h3>С вами свяжется консультант и уточнит детали</h3>
+                        <div class="deliv_step_pointer-mob"><hr class="deliv-hr">
+                            <span>></span>
+                        </div>
+                    </div>
+                        <div class="deliv__step deliv__step-3">
+                            <img class="deliv_step-3_img" src="image/deliv_step-3.png" alt="">
+                            <h2>Доставка</h2>
+                            <h3>К вам приедет курьер и доставит ваш заказ к указанному времени</h3>
+                        </div>
+                </div>
             </div>
                 <div class="q-a _container">
                     <p><a name="answer"></a></p>
