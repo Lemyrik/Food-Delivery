@@ -112,6 +112,9 @@ body {
     top: 0;
     min-height: 50px;
 }
+.header_mob {
+    display: none;
+}
 .header__burger {
     display: none;
 }
@@ -688,6 +691,24 @@ align-items: center;
     }
     .header__burger:after {
         bottom: 0;
+    }
+    .header_mob {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header_block {
+        display: flex;
+        width: 20%;
+        justify-content: space-around;
+    }
+    .header_block-1 {
+        width: 25%;
+    }
+    .header__nav {
+        display: none;
     }
     .header__band-hr {
         display: none;
